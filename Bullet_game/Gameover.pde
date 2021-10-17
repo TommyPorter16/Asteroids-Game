@@ -1,6 +1,6 @@
 void gameover() {
   background(0);
-  
+
   //win/lose screen
   if (AsteroidAmount == 21) {
     textSize(50);

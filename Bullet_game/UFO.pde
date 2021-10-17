@@ -56,7 +56,7 @@ class UFO extends GameObject {
     vy = myShip.loc.y-loc.y;
     vx = myShip.loc.x-loc.x;
 
-   //shooting bullets
+    //shooting bullets
     shotTimer++;
     if (shotTimer > threshold) {
       myObjects.add(new UFOBullet(loc.x, loc.y, vx, vy));
@@ -66,8 +66,8 @@ class UFO extends GameObject {
 
     // dying off screen
     if (loc.y < -50 || loc.y > height +50 || loc.x < -50 || loc.x > width+50)  lives = 0;
-    
-    
+
+
     //dying to bullets
     int i = 0;
     while (i < myObjects.size()) {

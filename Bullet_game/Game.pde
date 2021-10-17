@@ -20,7 +20,7 @@ void game() {
     myObj.show();
     myObj.act();
 
-  //removing all objects if lives = 0
+    //removing all objects if lives = 0
     if (myObj.lives == 0) {
       myObjects.remove(i);
     } else {

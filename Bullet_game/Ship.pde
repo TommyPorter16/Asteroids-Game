@@ -17,7 +17,7 @@ class Ship extends GameObject {
 
   void show() {
     pushMatrix();
-    
+
     translate(loc.x, loc.y);
     rotate(direction.heading());
 
@@ -57,7 +57,7 @@ class Ship extends GameObject {
 
 
 
-   // immunity + getting hit
+    // immunity + getting hit
     immuneTimer--;
 
     if (immuneTimer <= 0) {

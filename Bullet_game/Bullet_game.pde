@@ -32,7 +32,7 @@ void setup() {
   size(800, 600);
   rectMode(CENTER);
   mode = INTRO;
-  
+
   //loading images
   imageMode(CENTER);
   UFO = loadImage("UFO.png");

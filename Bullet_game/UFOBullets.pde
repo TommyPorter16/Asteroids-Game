@@ -21,7 +21,7 @@ class UFOBullet extends GameObject {
   void act() {
     super.act();
 
-    
+
 
     timer--;
     if (timer == 0) {

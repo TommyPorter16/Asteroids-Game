@@ -27,7 +27,7 @@ class Asteroid extends GameObject {
 
   void act() {
     super.act();
-   
+
     //killing and splitting asteroids
     int i = 0;
     while (i < myObjects.size()) {
