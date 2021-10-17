@@ -18,6 +18,7 @@ class Fire extends GameObject {
 
 
   void show() {
+    //drawing fire
     noStroke();
     fill(255, 0, 0, t);
     square(loc.x, loc.y, size);

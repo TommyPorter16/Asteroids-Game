@@ -13,6 +13,7 @@ class Bullet extends GameObject {
   }
 
   void show() {
+    //drawing bullets
     stroke(255);
     noFill();
     circle(loc.x, loc.y, size);

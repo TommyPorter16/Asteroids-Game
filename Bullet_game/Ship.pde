@@ -11,12 +11,13 @@ class Ship extends GameObject {
     direction = new PVector (0, -0.1);
     shotTimer = 0;
     threshold = 30;
-    immuneTimer = 0;
+    immuneTimer = 90;
     tpTimer = 400;
   }
 
   void show() {
     pushMatrix();
+    
     translate(loc.x, loc.y);
     rotate(direction.heading());
 
@@ -25,7 +26,7 @@ class Ship extends GameObject {
     } else {
       fill(255);
     }
-    stroke(255);
+    noStroke();
     triangle(-25, -12.5, -25, 12.5, 25, 0);
     popMatrix();
   }
@@ -55,6 +56,8 @@ class Ship extends GameObject {
     }
 
 
+
+   // immunity + getting hit
     immuneTimer--;
 
     if (immuneTimer <= 0) {
@@ -71,6 +74,8 @@ class Ship extends GameObject {
       }
     }
 
+
+    //teleportation
     tpTimer--;
 
     if (t ==true & tpTimer <= 0) {

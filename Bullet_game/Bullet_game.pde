@@ -4,18 +4,20 @@ Tommy Porter
  Oct 3, 2021
  */
 
+//images/gifs/font
 PImage UFO;
 PImage Asteroid;
 PImage[] introgif;
 int numberOfFrames;
 int f =0;
 PFont space;
+
+//counting variabes
 int AsteroidAmount;
 int UFOSpawnTimer;
 
 boolean upkey, downkey, leftkey, rightkey, spacekey, t;
 Ship myShip;
-UFO myUFO;
 ArrayList<GameObject> myObjects;
 
 //Mode Framework
@@ -30,12 +32,14 @@ void setup() {
   size(800, 600);
   rectMode(CENTER);
   mode = INTRO;
+  
+  //loading images
   imageMode(CENTER);
   UFO = loadImage("UFO.png");
   Asteroid = loadImage("Asteroid.png");
   //font
   space = createFont("space.ttf", 100);
-  UFOSpawnTimer = 600;
+
 
 
   // introgif array

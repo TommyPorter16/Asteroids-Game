@@ -12,6 +12,7 @@ class AsteroidEffects extends GameObject {
 
 
   void show() {
+    //drawing asteroid effects
     stroke(255);
     fill(255, t);
     circle(loc.x, loc.y, size);

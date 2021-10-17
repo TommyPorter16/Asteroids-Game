@@ -19,6 +19,7 @@ class Asteroid extends GameObject {
   }
 
   void show() {
+    //drawing asteroids
     noFill();
     ellipse(loc.x, loc.y, size, size);
     image(Asteroid, loc.x, loc.y, size, size);
@@ -26,7 +27,8 @@ class Asteroid extends GameObject {
 
   void act() {
     super.act();
-
+   
+    //killing and splitting asteroids
     int i = 0;
     while (i < myObjects.size()) {
       GameObject myObj = myObjects.get(i);
